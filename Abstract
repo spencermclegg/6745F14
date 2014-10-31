@@ -4,30 +4,27 @@ Project Proposal
 
 Spencer M. Clegg, Matthew Huff, Drew Janibagian
 
-[The general topic area that you plan to study, and the core computational technologies that you wish
-to employ. For example, are you interested in combinational circuit verification, sequential circuit or
-RTL verification? Will you learn Gröbner basis concepts and their application or will you use BDDs,
-SMT solvers, SAT solvers or a combination of these?]
+This project proposes a CNF SAT transformation algorythm employing a unique partitioning technique followed by efficient monomial ordering, polynomial to CNF conversion, and finally, run through a SAT solver engine. Gr¨obner bases as a means to analyze the problem structure. The excercise will follow similar methods of C. Condrat and P. Kalla, “A Grobner Basis Approach to CNF formulae Preprocessing,".
 
-[If you are interested in developing a core engine, say, the F4 algorithm and applying it to a specific
-domain — such as over Boolean rings for bit-level circuit verification — then describe the objective
-clearly.]
+There are five major milestones for this project. 1) Developing the partiioning algorythm, 2) developing the monomial ordering algorythm, 3) devloping the code to convert the results of (1) and (2) into CNF and run through a SAT solver, 4) final integration and debugging, and 5) authoring results into a final project paper. Each team member will be deeply involed with each potion of the project; however, each member will lead or "own" a portion of the project as such:
 
-[If you have already refined/finalized the exact problem you wish to solve, then state the problem as
-best as you can. If you only have a general idea of the problem, and plan to refine the exact problem
-later with my help, it is okay to say so. But, do you best to narrow down the focus as best as you can.]
+Matthew Huff - Partitioning
+Spencer Clegg - Monomial Ordering
+Drew Janibagian - CNF Conversion and SAT solving
+
+As a general timeline:
+
+Proposal/Abstract Complete - 10/31
+Code draft compelte - 11/17
+Intro and Methods (Paper) draft compelte - 11/26
+Final code integration and debugging - 12/05
+Results compiled and report draft compelte - 12/12
+Final Paper Submitted - 12/15
 
 [Once the problem is described, what approach will you take to address your project. What topic areas
 require further study and which papers will you refer to? Provide a (short/relevant) reference list.]
 
 [What tools do you think you plan to develop, and if you already have some implementation ideas, you
 should write about it.]
-
-[Try to project a realistic time-line about tasks/milestones you have decided to accomplish.]
-
-[Finally, there’s got to be a “division of labour” among the team-mates. Of course, each team member will
-have to perform the same preliminary study so all of you understand the problem being addressed; but
-when you get to implementation, not all of you have to do the same things. It is always good to agree
-upon each team member’s responsibilities.]
 
 [Closing Paragraph]

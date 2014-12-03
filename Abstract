@@ -1,5 +1,6 @@
 Project Proposal
 
+<<<<<<< HEAD
 "Someone Make a Formal Sounding Title Here"
 
 Spencer M. Clegg, Matthew Huff, Drew Janibagian
@@ -31,3 +32,8 @@ when you get to implementation, not all of you have to do the same things. It is
 upon each team member’s responsibilities.]
 
 [Closing Paragraph]
+=======
+Put some stuff here (about 1 page)
+
+Matt Huff: a further exploration of Dr. Kalla's work on preprocessing a cnf file using Grobner Bases, for a quicker SAT/UNSAT runtime.
+>>>>>>> cbecb06613c011164f52d98ab5085b6508005906

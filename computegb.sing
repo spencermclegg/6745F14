@@ -1,0 +1,12 @@
+// Input: text file containing the ring and a set of Ideals.
+
+// name of list variable storing the sets of ideals.
+parts;
+list gparts;
+// A loop to iterate over and operate on the set of ideals.
+for(int i = 1; i <= size(parts) i=i+1) {
+  gparts = insert(gparts, slimgb(parts[i]), size(gparts));
+ }
+// Output: A set of reduced Groebner bases ideals.  Size of set will be
+// same as the size of the input set of ideals.
+gparts;

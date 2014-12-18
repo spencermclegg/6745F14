@@ -1,0 +1,16 @@
+ring r = 0, (v1,v2,v3,....,v42),lp;
+
+poly p1 = ...;
+poly p2 = ...;
+...
+...
+poly p133 = ...;
+
+ideal I1 = ...;
+ideal I2 = ...;
+ideal I3 = ...;
+ideal I4 = ...;
+ideal I5 = ...;
+ideal I6 = ...;
+
+list parts = I1, I2, I3, I4, I5, I6;

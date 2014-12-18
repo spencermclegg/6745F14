@@ -1,0 +1,799 @@
+ring r = 0, (TBD)ld;
+
+poly p13 = c13 + v1 + v7;
+poly p14 = c14 + v1 + v13;
+poly p15 = c15 + v1 + v19;
+poly p16 = c16 + v1 + v25;
+poly p17 = c17 + v1 + v31;
+poly p18 = c18 + v1 + v37;
+poly p19 = c19 + v7 + v13;
+poly p20 = c20 + v7 + v19;
+poly p21 = c21 + v7 + v25;
+poly p22 = c22 + v7 + v31;
+poly p23 = c23 + v7 + v37;
+poly p24 = c24 + v13 + v19;
+poly p25 = c25 + v13 + v25;
+poly p26 = c26 + v13 + v31;
+poly p27 = c27 + v13 + v37;
+poly p28 = c28 + v19 + v25;
+poly p29 = c29 + v19 + v31;
+poly p30 = c30 + v19 + v37;
+poly p31 = c31 + v25 + v31;
+poly p32 = c32 + v25 + v37;
+poly p33 = c33 + v31 + v37;
+poly p34 = c34 + v2 + v8;
+poly p35 = c35 + v2 + v14;
+poly p36 = c36 + v2 + v20;
+poly p37 = c37 + v2 + v26;
+poly p38 = c38 + v2 + v32;
+poly p39 = c39 + v2 + v38;
+poly p40 = c40 + v8 + v14;
+poly p41 = c41 + v8 + v20;
+poly p42 = c42 + v8 + v26;
+poly p43 = c43 + v8 + v32;
+poly p44 = c44 + v8 + v38;
+poly p45 = c45 + v14 + v20;
+poly p46 = c46 + v14 + v26;
+poly p47 = c47 + v14 + v32;
+poly p48 = c48 + v14 + v38;
+poly p49 = c49 + v20 + v26;
+poly p50 = c50 + v20 + v32;
+poly p51 = c51 + v20 + v38;
+poly p52 = c52 + v26 + v32;
+poly p53 = c53 + v26 + v38;
+poly p54 = c54 + v32 + v38;
+poly p55 = c55 + v3 + v9;
+poly p56 = c56 + v3 + v15;
+poly p57 = c57 + v3 + v21;
+poly p58 = c58 + v3 + v27;
+poly p59 = c59 + v3 + v33;
+poly p60 = c60 + v3 + v39;
+poly p61 = c61 + v9 + v15;
+poly p62 = c62 + v9 + v21;
+poly p63 = c63 + v9 + v27;
+poly p64 = c64 + v9 + v33;
+poly p65 = c65 + v9 + v39;
+poly p66 = c66 + v15 + v21;
+poly p67 = c67 + v15 + v27;
+poly p68 = c68 + v15 + v33;
+poly p69 = c69 + v15 + v39;
+poly p70 = c70 + v21 + v27;
+poly p71 = c71 + v21 + v33;
+poly p72 = c72 + v21 + v39;
+poly p73 = c73 + v27 + v33;
+poly p74 = c74 + v27 + v39;
+poly p75 = c75 + v33 + v39;
+poly p76 = c76 + v4 + v10;
+poly p77 = c77 + v4 + v16;
+poly p78 = c78 + v4 + v22;
+poly p79 = c79 + v4 + v28;
+poly p80 = c80 + v4 + v34;
+poly p81 = c81 + v4 + v40;
+poly p82 = c82 + v10 + v16;
+poly p83 = c83 + v10 + v22;
+poly p84 = c84 + v10 + v28;
+poly p85 = c85 + v10 + v34;
+poly p86 = c86 + v10 + v40;
+poly p87 = c87 + v16 + v22;
+poly p88 = c88 + v16 + v28;
+poly p89 = c89 + v16 + v34;
+poly p90 = c90 + v16 + v40;
+poly p91 = c91 + v22 + v28;
+poly p92 = c92 + v22 + v34;
+poly p93 = c93 + v22 + v40;
+poly p94 = c94 + v28 + v34;
+poly p95 = c95 + v28 + v40;
+poly p96 = c96 + v34 + v40;
+poly p97 = c97 + v5 + v11;
+poly p98 = c98 + v5 + v17;
+poly p99 = c99 + v5 + v23;
+poly p100 = c100 + v5 + v29;
+poly p101 = c101 + v5 + v35;
+poly p102 = c102 + v5 + v41;
+poly p103 = c103 + v11 + v17;
+poly p104 = c104 + v11 + v23;
+poly p105 = c105 + v11 + v29;
+poly p106 = c106 + v11 + v35;
+poly p107 = c107 + v11 + v41;
+poly p108 = c108 + v17 + v23;
+poly p109 = c109 + v17 + v29;
+poly p110 = c110 + v17 + v35;
+poly p111 = c111 + v17 + v41;
+poly p112 = c112 + v23 + v29;
+poly p113 = c113 + v23 + v35;
+poly p114 = c114 + v23 + v41;
+poly p115 = c115 + v29 + v35;
+poly p116 = c116 + v29 + v41;
+poly p117 = c117 + v35 + v41;
+poly p118 = c118 + v6 + v12;
+poly p119 = c119 + v6 + v18;
+poly p120 = c120 + v6 + v24;
+poly p121 = c121 + v6 + v30;
+poly p122 = c122 + v6 + v36;
+poly p123 = c123 + v6 + v42;
+poly p124 = c124 + v12 + v18;
+poly p125 = c125 + v12 + v24;
+poly p126 = c126 + v12 + v30;
+poly p127 = c127 + v12 + v36;
+poly p128 = c128 + v12 + v42;
+poly p129 = c129 + v18 + v24;
+poly p130 = c130 + v18 + v30;
+poly p131 = c131 + v18 + v36;
+poly p132 = c132 + v18 + v42;
+poly p133 = c133 + v24 + v30;
+poly p134 = c134 + v24 + v36;
+poly p135 = c135 + v24 + v42;
+poly p136 = c136 + v30 + v36;
+poly p137 = c137 + v30 + v42;
+poly p138 = c138 + v36 + v42;
+poly p139 = c139 + v6 + v5 + v4 + v3 + v2 + v1;
+poly p140 = c140 + v12 + v11 + v10 + v9 + v8 + v7;
+poly p141 = c141 + v18 + v17 + v16 + v15 + v14 + v13;
+poly p142 = c142 + v24 + v23 + v22 + v21 + v20 + v19;
+poly p143 = c143 + v30 + v29 + v28 + v27 + v26 + v25;
+poly p144 = c144 + v36 + v35 + v34 + v33 + v32 + v31;
+poly p145 = c145 + v42 + v41 + v40 + v39 + v38 + v37;
+number_of_ideals:0    compare: 1
+   index: 0
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 1
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 2
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 3
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 4
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 5
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 6
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 7
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 8
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 9
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 10
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 11
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 12
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 13
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 14
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 15
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 16
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 17
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 18
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 19
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 20
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 21
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 22
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 23
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 24
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 25
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 26
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 27
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 28
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 29
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 30
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 31
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 32
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 33
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 34
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 35
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 36
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 37
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 38
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 39
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 40
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 41
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 42
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 43
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 44
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 45
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 46
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 47
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 48
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 49
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 50
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 51
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 52
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 53
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 54
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 55
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 56
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 57
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 58
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 59
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 60
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 61
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 62
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 63
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 64
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 65
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 66
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 67
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 68
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 69
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 70
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 71
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 72
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 73
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 74
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 75
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 76
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 77
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 78
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 79
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 80
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 81
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 82
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 83
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 84
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 85
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 86
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 87
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 88
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 89
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 90
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 91
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 92
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 93
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 94
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 95
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 96
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 97
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 98
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 99
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 100
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 101
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 102
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 103
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 104
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 105
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 106
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 107
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 108
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 109
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 110
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 111
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 112
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 113
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 114
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 115
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 116
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 117
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 118
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 119
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 120
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 121
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 122
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 123
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 124
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 0
+   index: 125
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 126
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 127
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 128
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 129
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 130
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 131
+number_of_ideals:1
+
+number_of_ideals:1
+    compare: 1
+   index: 132
+number_of_ideals:1
+

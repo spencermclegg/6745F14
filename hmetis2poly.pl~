@@ -16,7 +16,7 @@ my $CNF_filename = @ARGV[0];
 my $HMETIS_filename = @ARGV[1];
 my $output_filename = @ARGV[2];
 open OUTPUT_FILE, ">$output_filename" or die $!;
-print "\nInput CNF: $CNF_filename\n";
+print "Input CNF: $CNF_filename\n";
 print "Input HMETIS: $HMETIS_filename\n";
 print "Output File: $output_filename\n";
 # Write ring r = 0, ...from p cnf {num_variables} {num_clauses}

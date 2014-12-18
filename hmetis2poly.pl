@@ -6,7 +6,7 @@ use String::Util "trim";
 use List::Util qw( min max );
 # --- Usage --- #
 if (@ARGV == 0 && -t STDIN && -t STDERR) { 
-    print STDERR "$0: USAGE: perl hmetis2poly.pl [CNF FILE] [HMETIS OUTPUT FILE] [OUTPUT FILENAME]\n";
+    print STDERR "$0: USAGE: perl hmetis2poly.pl [CNF FILE] [HMETIS FILE] [OUTPUT FILENAME]\n";
     exit;
 }
 

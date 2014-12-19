@@ -12,7 +12,7 @@ if (@ARGV == 0 && -t STDIN && -t STDERR) {
     exit;
 }
 # declare all variables to use.
-my ($i, @input_file_lines, @hmetis_file_lines, @linesplit, @vars, @clauses, @polys, %ideals, $CNF_filename, $HMETIS_filename, $output_filename);
+my ($i, $j, $poly_line, @input_file_lines, @hmetis_file_lines, @linesplit, @vars, @clauses, @polys, %ideals, $CNF_filename, $HMETIS_filename, $output_filename);
 
 $CNF_filename = $ARGV[0];
 $HMETIS_filename = $ARGV[1];
@@ -68,11 +68,36 @@ shift(@input_file_lines);
 for($i = 0; $i < scalar @input_file_lines; $i++) {
     @linesplit = split(' ', $input_file_lines[$i]);
     pop(@linesplit);
-    print OUTPUT_FILE "poly $polys[$i] = $clauses[$i]";
-    for(@linesplit) {
-	print OUTPUT_FILE " + $vars[abs(trim($_)) - 1]";
+    print OUTPUT_FILE "poly $polys[$i] = $clauses[$i] + ";
+    my $index1 = abs(trim($linesplit[0])) - 1;
+    my $index2 = abs(trim($linesplit[1])) - 1;
+    $poly_line = "";
+    if(trim($linesplit[0]) > 0) {
+	if(trim($linesplit[1]) > 0) {
+	    $poly_line = "$vars[$index1] + $vars[$index2] + $vars[$index1]*$vars[$index2]";
+	}
+	else {
+	    $poly_line = "$vars[$index2] + $vars[$index1]*$vars[$index2]";
+	}
     }
-    print OUTPUT_FILE ";\n";
+    else {
+	if($linesplit[1] > 0) {
+	    $poly_line = "$vars[$index1] + $vars[$index1]*$vars[$index2]";
+	}
+	else {
+	    $poly_line = "$vars[$index1]*$vars[$index2]";
+	}
+    }
+    for($j = 2; $j < scalar @linesplit; $j++) {
+	$index2 = abs(trim($linesplit[$j])) - 1;
+	if($linesplit[$j] > 0) {
+	    $poly_line = "($poly_line) + $vars[$index2] + ($poly_line)*$vars[$index2]";
+	}
+	else {
+	    $poly_line = "($poly_line)*$vars[$index2]";
+	}
+    }
+    print OUTPUT_FILE "$poly_line;\n";
 }
 $i = 0;
 for(@hmetis_file_lines) {

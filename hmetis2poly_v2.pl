@@ -94,7 +94,7 @@ for($i = 0; $i < scalar @input_file_lines; $i++) {
 	    $poly_line = "($poly_line) + $vars[$index2] + ($poly_line)*$vars[$index2]";
 	}
 	else {
-	    $poly_line = "($poly_line)*$vars[$index2]";
+	    $poly_line = "$vars[$index2] + ($poly_line)*$vars[$index2]";
 	}
     }
     print OUTPUT_FILE "$poly_line;\n";

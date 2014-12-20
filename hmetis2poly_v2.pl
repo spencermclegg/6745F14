@@ -61,7 +61,7 @@ for(@vars) {
 # open output file to write to.
 open OUTPUT_FILE, ">$output_filename" or die $!;
 # create ring line, print to output file.
-print OUTPUT_FILE "ring r = 0,(", join(", ", @clauses, @vars), "),lp;\n\n";
+print OUTPUT_FILE "ring r = (2,x),(", join(", ", @clauses, @vars), "),lp;\n\n";
 # delete p cnf line.
 shift(@input_file_lines);
 # print polynomials to output file.
@@ -74,7 +74,7 @@ for($i = 0; $i < scalar @input_file_lines; $i++) {
     $poly_line = "";
     if(trim($linesplit[0]) > 0) {
 	if(trim($linesplit[1]) > 0) {
-	    $poly_line = "$vars[$index1] + $vars[$index2] + $vars[$index1]*$vars[$index2]";
+	    $poly_line = "$vars[$index1] + $vars[$index2] + $vars[$index1]*$vars[$index2] + 1";
 	}
 	else {
 	    $poly_line = "$vars[$index2] + $vars[$index1]*$vars[$index2]";
@@ -91,7 +91,7 @@ for($i = 0; $i < scalar @input_file_lines; $i++) {
     for($j = 2; $j < scalar @linesplit; $j++) {
 	$index2 = abs(trim($linesplit[$j])) - 1;
 	if($linesplit[$j] > 0) {
-	    $poly_line = "($poly_line) + $vars[$index2] + ($poly_line)*$vars[$index2]";
+	    $poly_line = "($poly_line) + $vars[$index2] + ($poly_line)*$vars[$index2] + 1";
 	}
 	else {
 	    $poly_line = "$vars[$index2] + ($poly_line)*$vars[$index2]";
